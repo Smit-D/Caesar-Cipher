@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cns;
 
 import javafx.application.Application;
@@ -14,10 +9,6 @@ import javafx.scene.layout.*;
 
 import javafx.stage.Stage;
 
-/**
- *
- * @author HP
- */
 public class CesearCipher extends Application {
     
     
@@ -67,7 +58,7 @@ public class CesearCipher extends Application {
         plainText.setPromptText("Anser prints here");
         TextField shift = new TextField();
         shift.setPromptText("Enter keyvalue here");
-  
+         /* Encryption button method*/
         btn1.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
                 String pt=plainText.getText();
@@ -77,6 +68,7 @@ public class CesearCipher extends Application {
                 System.out.println(cipher);
             }
         });
+          /* Decryption button method*/
        btn2.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
                 String pt=plainText.getText();
